@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="style.css">
+    <title>API based Weather Web Application</title>
+</head>
+<body>
+    <h1 class="heading">Weather Web Application</h1>
+    <div class="btn-container">
+        <button class="loc-button" id="loc-btn"><span class="show">Current Location</span><span class="hide"><i class="fa-solid fa-location-crosshairs"></i></span></button>
+        <input class="city-input" type="text" placeholder="E.g., New York, London, Tokyo">
+        <button class="loc-button" id="search-btn"><span class="show">Search Location</span><span class="hide"><i class="fa-solid fa-magnifying-glass"></i></span></button>
+    </div>
+    <div class="container">
+        <div class="left-info">
+            <div class="pic-gradient"></div>
+            <div class="today-info">
+                <h2>Friday</h2>
+                <span>28 July 2023</span>
+                <div class="city">
+                    <i class='bx bx-current-location'></i>
+                    <span>Paris, FR</span>
+                </div>
+            </div>
+            <div class="today-weather">
+                <i class='bx bx-sun'></i>
+                <h1 class="weather-temp">
+                    25°C
+                </h1>
+                <h3>Sunny</h3>
+            </div>
+        </div>
+
+        <div class="right-info">
+            <div class="flexdiv">
+                <div class="day-info">
+                    <div>
+                        <span class="title">PRECIPITATION</span>
+                        <span class="value">4 %</span>
+                    </div>
+                    <div>
+                        <span class="title">HUMIDITY</span>
+                        <span class="value">34 %</span>
+                    </div>
+                    <div>
+                        <span class="title">WIND SPEED</span>
+                        <span class="value">6 km/h</span>
+                    </div>
+                </div>
+
+                <ul class="days-list">
+                    <li>
+                        <i class='bx bx-cloud'></i>
+                        <span>Sat</span>
+                        <span class="day-temp">23°C</span>
+                    </li>
+                    <li>
+                        <i class='bx bx-sun'></i>
+                        <span>Sun</span>
+                        <span class="day-temp">28°C</span>
+                    </li>
+                    <li>
+                        <i class='bx bx-cloud-rain'></i>
+                        <span></span>Mon</span>
+                        <span class="day-temp">02°C</span>
+                    </li>
+                    <li>
+                        <i class='bx bx-cloud-drizzle'></i>
+                        <span>Tue</span>
+                        <span class="day-temp">14°C</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
